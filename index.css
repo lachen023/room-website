@@ -1,0 +1,88 @@
+html, body {
+    width: 100%;
+    max-width: 1440px;
+    font-family: 'League Spartan';
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.nav-bar {
+    color: white;
+    background-color: black;
+    max-width: 40%;
+    min-width: 400px;
+    
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    height: 40px;
+    align-items: center;
+}
+li {
+    font-weight:700;
+    font-size: 18px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#logo{
+    background-color: black;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#shop-now-btn-container {
+    display: flex;
+    background-color: gray;
+    height: 40px;
+    width: 300px;
+    border: none; 
+    justify-content: space-around;
+}
+
+#shop-arrow {
+    padding: 0 20px;
+}
+
+#shop-now-btn:hover {
+    color: hsl(0, 0%, 27%);
+    animation-name: shop-move;
+    animation-duration: 1s;
+
+}
+
+@keyframes shop-move {
+    50% {
+        background-color: red;
+        left: 100px;
+    }
+
+    100% {
+        background-color: blue;
+        left: 200px;
+    }
+}
+
+.arrow-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: black;  
+}
+
+.arrow:hover {
+    background-color: hsl(0, 0%, 27%);
+}
